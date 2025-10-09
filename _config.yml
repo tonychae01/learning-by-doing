@@ -8,10 +8,18 @@ collections:
   writings:
     output: true
     permalink: /writings/:name/
+  readings:
+    output: true
+    permalink: /readings/:name/
 
 defaults:
   - scope:
-      path: ""          # 모든 경로
-      type: writings    # _writings 컬렉션 문서에만 적용
+      path: ""
+      type: writings
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: readings
     values:
       layout: default

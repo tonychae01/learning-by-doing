@@ -1,6 +1,7 @@
 ---
 layout: none
 title: Writings
+permalink: /writings/
 ---
 <!doctype html>
 <html lang="en">

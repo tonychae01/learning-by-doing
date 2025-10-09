@@ -1,0 +1,19 @@
+---
+layout: default
+title: "Different Neural Recordings"
+date: 2025-10-09
+summary: "What is neuropixel?"
+---
+
+**DEBUG visible?**
+
+NEUROPIXEL - Feynmann learning!
+Concept: Optogenetics  
+Summary: Light-controlled modulation of neuron activity via opsins  
+Mechanism: DNA → Opsin → 光 → Ion Channel → Action potential 
+```
+code?
+```
+Analogy: transistor gate → light as gate voltage  
+Questions: Can we map opsin spectral sensitivity to cortical column layers?  
+My Insight: e.g.  one sentence

@@ -1,6 +1,6 @@
 title: "Tony Chae"
 description: "writings"
-baseurl: ""        # don't change for user.github.io
+baseurl: "https://tonychae01.github.io/"        # don't change for user.github.io
 url: "https://learning-by-doing"
 markdown: kramdown
 

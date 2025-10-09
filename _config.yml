@@ -1,0 +1,11 @@
+title: "Tony Chae"
+description: "writings"
+baseurl: ""        # don't change for user.github.io
+url: "https://tonychae.github.io"
+markdown: kramdown
+
+# 글 모음(컬렉션) 설정
+collections:
+  writings:
+    output: true
+    permalink: /writings/:name/

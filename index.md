@@ -8,14 +8,7 @@
 <body>
   <aside>
     <img src="assets/tony.jpg" alt="Tony Chae" class="profile">
-    <nav>
-      <a href="about.html">About</a>
-      <a href="writings.html">Writings</a>
-      <a href="https://github.com/tonychae">Code</a>
-    </nav>
-    <footer>© 2025 Tony Chae</footer>
-  </aside>
-
+  
   <main>
     <h1>Tony Chae</h1>
     <p>I’m an engineer and philosopher exploring how brain–computer interfaces can

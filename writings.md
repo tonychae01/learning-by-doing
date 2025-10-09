@@ -15,3 +15,5 @@ permalink: /writings/
   </li>
 {% endfor %}
 </ul>
+
+

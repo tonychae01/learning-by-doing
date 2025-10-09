@@ -1,10 +1,9 @@
 title: "Tony Chae"
 description: "writings"
-baseurl: "https://tonychae01.github.io/"        # don't change for user.github.io
-url: "https://learning-by-doing"
+url: "https://tonychae01.github.io"   # 사용자 도메인 (뒤에 / 없음)
+baseurl: "/learning-by-doing"         # 프로젝트 경로 (앞에 / 붙임)
 markdown: kramdown
 
-# 글 모음(컬렉션) 설정
 collections:
   writings:
     output: true

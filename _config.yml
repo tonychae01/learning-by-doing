@@ -1,10 +1,17 @@
 title: "Tony Chae"
 description: "writings"
-url: "https://tonychae01.github.io"   # 사용자 도메인 (뒤에 / 없음)
-baseurl: "/learning-by-doing"         # 프로젝트 경로 (앞에 / 붙임)
+url: "https://tonychae01.github.io"
+baseurl: "/learning-by-doing"
 markdown: kramdown
 
 collections:
   writings:
     output: true
     permalink: /writings/:name/
+
+defaults:
+  - scope:
+      path: ""          # 모든 경로
+      type: writings    # _writings 컬렉션 문서에만 적용
+    values:
+      layout: default

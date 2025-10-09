@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root { --w: 700px; --fg: #111; --muted:#666; }
+    html { font-family: "Georgia", "Crimson Pro", serif; color: var(--fg); }
+    body { margin: 3rem auto; max-width: var(--w); padding: 0 1rem; line-height: 1.6; }
+    a { color: inherit; text-decoration: underline; }
+    header, footer { opacity: .75; font-size: .95rem; }
+    h1,h2,h3 { letter-spacing: .2px; }
+    nav a { margin-right: 1rem; text-decoration: none; border-bottom: 1px solid #ddd; }
+    .summary { color: var(--muted); }
+    hr { border: 0; border-top: 1px solid #eee; margin: 2rem 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="{{ '/' | relative_url }}">home</a>
+      <a href="{{ '/writings/' | relative_url }}">writings</a>
+      <a href="{{ '/about/' | relative_url }}">about</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <hr>
+    <div>&copy; {{ site.title }}</div>
+  </footer>
+</body>
+</html>

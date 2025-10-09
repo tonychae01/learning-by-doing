@@ -1,7 +1,7 @@
 title: "Tony Chae"
 description: "writings"
 baseurl: ""        # don't change for user.github.io
-url: "https://tonychae01.github.io"
+url: "https://learning-by-doing"
 markdown: kramdown
 
 # 글 모음(컬렉션) 설정

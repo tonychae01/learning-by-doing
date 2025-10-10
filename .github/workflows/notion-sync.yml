@@ -1,0 +1,64 @@
+name: Sync Notion to GitHub
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # 6시간마다 자동 실행
+  workflow_dispatch:       # 수동 실행도 가능
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install notion2md
+        run: npm install -g notion-to-md
+
+      - name: Fetch Notion Pages
+        run: |
+          mkdir -p _writings
+          mkdir -p _readings
+          node <<'EOF'
+          import { Client } from "@notionhq/client"
+          import { NotionToMarkdown } from "notion-to-md"
+          import fs from "fs"
+
+          const notion = new Client({ auth: process.env.NOTION_TOKEN })
+          const n2m = new NotionToMarkdown({ notionClient: notion })
+
+          const DATABASE_ID = process.env.NOTION_DATABASE_ID
+          const res = await notion.databases.query({ database_id: DATABASE_ID })
+
+          for (const page of res.results) {
+            const id = page.id
+            const props = page.properties
+            const title = props["Title"]?.title?.[0]?.plain_text || "Untitled"
+            const date = props["Date"]?.date?.start || new Date().toISOString().slice(0,10)
+            const summary = props["Summary"]?.rich_text?.[0]?.plain_text || ""
+            const folder = props["Folder"]?.select?.name || "writings"
+
+            const mdBlocks = await n2m.pageToMarkdown(id)
+            const mdString = n2m.toMarkdownString(mdBlocks)
+
+            const fm = `---\nlayout: default\ntitle: "${title}"\ndate: ${date}\nsummary: "${summary}"\n---\n\n`
+            fs.writeFileSync(`_${folder}/${title.replace(/\s+/g, '-').toLowerCase()}.md`, fm + mdString)
+          }
+          EOF
+
+      - name: Commit & Push changes
+        run: |
+          git config user.name "notion-bot"
+          git config user.email "notion-bot@example.com"
+          git add .
+          git commit -m "Auto-sync from Notion" || echo "No changes"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID_READINGS }}

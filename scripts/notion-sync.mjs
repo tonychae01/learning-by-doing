@@ -30,8 +30,7 @@ for (const page of res.results) {
   const folder = (p.Folder?.select?.name?.toLowerCase()) || "writings";
 
   const mdBlocks = await n2m.pageToMarkdown(page.id);
-  const { parent, children } = n2m.toMarkdownString(mdBlocks);
-  const body = [parent, ...children].join("\n\n").trim();
+  const body = n2m.toMarkdownString(mdBlocks).trim();
 
   const slug = slugify(title);
   const outDir = `_${folder}`;

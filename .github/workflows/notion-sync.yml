@@ -17,8 +17,9 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install deps
-        run: npm install @notionhq/client notion-to-md
+      - name: Install deps (pin versions)
+        run: npm install @notionhq/client@2.2.13 notion-to-md@3.1.0
+
 
       - name: Run sync script
         env:

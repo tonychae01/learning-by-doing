@@ -92,4 +92,10 @@ summary: "${summary.replace(/"/g, '\\"')}"
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
         run: node scripts/notion-sync.mjs
 
-      - name: Com
+      - name: Commit & Push changes
+        run: |
+          git config user.name "notion-bot"
+          git config user.email "notion-bot@example.com"
+          git add .
+          git commit -m "Auto-sync from Notion" || echo "No changes"
+          git push

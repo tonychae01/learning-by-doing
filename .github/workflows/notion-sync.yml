@@ -1,64 +1,88 @@
 name: Sync Notion to GitHub
 
 on:
+  workflow_dispatch:  # 수동 실행 가능
   schedule:
-    - cron: '0 */6 * * *'  # 6시간마다 자동 실행
-  workflow_dispatch:       # 수동 실행도 가능
+    - cron: '0 * * * *'  # 매시간 자동 실행
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
-      - name: Install notion2md
-        run: npm install -g notion-to-md
+      - name: Install Notion dependencies
+        run: npm install @notionhq/client notion-to-md
 
-      - name: Fetch Notion Pages
+      - name: Fetch Notion Database and Export to Markdown
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
         run: |
-          mkdir -p _writings
-          mkdir -p _readings
-          node <<'EOF'
-          import { Client } from "@notionhq/client"
-          import { NotionToMarkdown } from "notion-to-md"
-          import fs from "fs"
+          mkdir -p _writings _readings
+          node --input-type=module <<'EOF'
+          import { Client } from "@notionhq/client";
+          import { NotionToMarkdown } from "notion-to-md";
+          import fs from "fs";
 
-          const notion = new Client({ auth: process.env.NOTION_TOKEN })
-          const n2m = new NotionToMarkdown({ notionClient: notion })
+          const notion = new Client({ auth: process.env.NOTION_TOKEN });
+          const n2m = new NotionToMarkdown({ notionClient: notion });
+          const DB_ID = process.env.NOTION_DATABASE_ID;
 
-          const DATABASE_ID = process.env.NOTION_DATABASE_ID
-          const res = await notion.databases.query({ database_id: DATABASE_ID })
+          const res = await notion.databases.query({ database_id: DB_ID });
+
+          function slugify(s) {
+            return s.toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+          }
 
           for (const page of res.results) {
-            const id = page.id
-            const props = page.properties
-            const title = props["Title"]?.title?.[0]?.plain_text || "Untitled"
-            const date = props["Date"]?.date?.start || new Date().toISOString().slice(0,10)
-            const summary = props["Summary"]?.rich_text?.[0]?.plain_text || ""
-            const folder = props["Folder"]?.select?.name || "writings"
+            const p = page.properties;
 
-            const mdBlocks = await n2m.pageToMarkdown(id)
-            const mdString = n2m.toMarkdownString(mdBlocks)
+            const title =
+              (p.Title?.title?.[0]?.plain_text) ||
+              (p.Name?.title?.[0]?.plain_text) ||
+              "untitled";
 
-            const fm = `---\nlayout: default\ntitle: "${title}"\ndate: ${date}\nsummary: "${summary}"\n---\n\n`
-            fs.writeFileSync(`_${folder}/${title.replace(/\s+/g, '-').toLowerCase()}.md`, fm + mdString)
+            const date =
+              (p.Date?.date?.start) ||
+              new Date().toISOString().slice(0,10);
+
+            const summary =
+              (p.Summary?.rich_text?.[0]?.plain_text) || "";
+
+            const folder =
+              (p.Folder?.select?.name?.toLowerCase()) || "writings";
+
+            const mdBlocks = await n2m.pageToMarkdown(page.id);
+            const { parent, children } = n2m.toMarkdownString(mdBlocks);
+            const body = [parent, ...children].join("\n\n").trim();
+
+            const slug = slugify(title);
+            const path = `_${folder}/${slug}.md`;
+
+            const fm =
+`---
+layout: default
+title: "${title.replace(/"/g, '\\"')}"
+date: ${date}
+summary: "${summary.replace(/"/g, '\\"')}"
+---`;
+
+            fs.writeFileSync(path, fm + "\n\n" + (body || "*No content*"), "utf8");
+            console.log("Wrote:", path);
           }
           EOF
 
       - name: Commit & Push changes
         run: |
-          git config user.name "notion-bot"
-          git config user.email "notion-bot@example.com"
+          git config user.name "TonyBot"
+          git config user.email "tony@example.com"
           git add .
-          git commit -m "Auto-sync from Notion" || echo "No changes"
+          git commit -m "Update from Notion" || echo "No changes"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}

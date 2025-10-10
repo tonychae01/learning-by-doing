@@ -1,16 +1,15 @@
 name: Sync Notion to GitHub
 
 on:
-  workflow_dispatch:     # 수동 실행 가능
+  workflow_dispatch:          # 수동 실행 버튼
   schedule:
-    - cron: '0 * * * *'  # 매시간 자동 실행
+    - cron: '0 * * * *'       # 매시간
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Node
@@ -18,84 +17,19 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
+      - name: Install deps
         run: npm install @notionhq/client notion-to-md
 
-      # 긴 스크립트는 파일로 만들어서 실행하면 YAML 에러가 안 납니다
-      - name: Create sync script
-        run: |
-          mkdir -p scripts _writings _readings
-          cat > scripts/notion-sync.mjs << 'EOF'
-          import { Client } from "@notionhq/client";
-          import { NotionToMarkdown } from "notion-to-md";
-          import fs from "node:fs";
-
-          const notion = new Client({ auth: process.env.NOTION_TOKEN });
-          const n2m = new NotionToMarkdown({ notionClient: notion });
-          const DB_ID = process.env.NOTION_DATABASE_ID;
-
-          // Notion DB에서 페이지들 읽기 (간단 버전; 필요시 페이징 추가)
-          const res = await notion.databases.query({ database_id: DB_ID });
-
-          const slugify = (s) =>
-            s.toLowerCase().trim()
-              .replace(/[^a-z0-9]+/g, "-")
-              .replace(/^-+|-+$/g, "");
-
-          for (const page of res.results) {
-            const p = page.properties;
-
-            const title =
-              (p.Title?.title?.[0]?.plain_text) ||
-              (p.Name?.title?.[0]?.plain_text) ||
-              "untitled";
-
-            const date =
-              (p.Date?.date?.start) ||
-              new Date().toISOString().slice(0, 10);
-
-            const summary =
-              (p.Summary?.rich_text?.[0]?.plain_text) || "";
-
-            // 폴더 선택(없으면 writings)
-            const folder =
-              (p.Folder?.select?.name?.toLowerCase()) || "writings";
-
-            // 본문을 Markdown으로 변환
-            const mdBlocks = await n2m.pageToMarkdown(page.id);
-            const { parent, children } = n2m.toMarkdownString(mdBlocks);
-            const body = [parent, ...children].join("\n\n").trim();
-
-            const slug = slugify(title);
-            const path = `_${folder}/${slug}.md`;
-
-            const frontmatter =
-`--- 
-layout: default
-title: "${title.replace(/"/g, '\\"')}"
-date: ${date}
-summary: "${summary.replace(/"/g, '\\"')}"
----`;
-
-            fs.writeFileSync(
-              path,
-              frontmatter + "\n\n" + (body || "*No content*"),
-              "utf8"
-            );
-            console.log("Wrote:", path);
-          }
-          EOF
-
-      - name: Run sync
+      - name: Run sync script
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
         run: node scripts/notion-sync.mjs
 
-      - name: Commit & Push changes
+      - name: Commit & Push
         run: |
           git config user.name "notion-bot"
           git config user.email "notion-bot@example.com"
-          git add .
+          git add -A
           git commit -m "Auto-sync from Notion" || echo "No changes"
           git push

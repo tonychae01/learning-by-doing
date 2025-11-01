@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "untitled"
-date: 2025-10-31
+date: 2025-11-01
 summary: ""
 ---
 

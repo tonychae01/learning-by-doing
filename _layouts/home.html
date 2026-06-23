@@ -19,7 +19,7 @@
 
   <!-- ---------- Header ---------- -->
   <header class="profile-header">
-    <h1 class="name">{{ p.name }}</h1>
+    <h1 class="name">{% assign nm = p.name | split: ' ' %}<span class="name-first">{{ nm[0] }}</span>{% for w in nm offset:1 %} {{ w }}{% endfor %}</h1>
     <p class="role">{{ p.role }}</p>
     <div class="icon-links">
       {% for link in p.links %}

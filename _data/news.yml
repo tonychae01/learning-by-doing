@@ -4,6 +4,6 @@
 # ---------------------------------------------------------------------------
 
 - date: "Jun 2025"
-  html: "Started a new project on silent-speech EMG decoding."
+  html: "Started a new project on SSL EMG decoding."
 - date: "Jan 2025"
-  html: "Released the <a href='https://github.com/tonychae01/kbci_speller'>kbci_speller</a> keyboard BCI prototype."
+  html: "Released the <a href='https://github.com/tonychae01/speller'>speller</a> keyboard BCI prototype."

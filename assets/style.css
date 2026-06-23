@@ -53,10 +53,11 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
 .profile-header { margin-bottom: 1.25rem; }
 .profile-header .name {
   font-size: 2.8rem;
-  font-weight: 700;
+  font-weight: 400;
   margin: 0 0 .25rem;
   letter-spacing: -.5px;
 }
+.profile-header .name .name-first { font-weight: 700; }
 .profile-header .role { color: var(--muted); margin: 0 0 .7rem; font-size: 1.2rem; }
 
 /* ---------- Intro: bio (left) + photo (right) ---------- */
@@ -86,9 +87,21 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
   color: var(--muted);
 }
 
-/* Blue emphasis inside the bio (like the reference) */
-.bio strong { color: var(--accent); font-weight: 700; }
-.bio em { color: var(--accent); font-style: italic; }
+/* Blue highlight emphasis inside the bio (like the reference) */
+.bio strong {
+  font-weight: 400;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: .02em .32em;
+  border-radius: 4px;
+}
+.bio em {
+  font-style: normal;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: .02em .32em;
+  border-radius: 4px;
+}
 .bio code {
   font-family: "Courier New", monospace;
   font-size: .9em;

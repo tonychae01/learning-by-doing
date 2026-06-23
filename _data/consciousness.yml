@@ -1,0 +1,52 @@
+# ---------------------------------------------------------------------------
+# The "Consciousness" mind-map page.
+#
+# Each branch becomes a node around the central "Consciousness" node.
+# Click a node on the site to reveal its content panel.
+#
+#   id     : unique slug (used internally)
+#   label  : text shown on the node
+#   icon   : Font Awesome class (https://fontawesome.com/icons)
+#   type   : "gallery"  -> grid of images (items use src + caption)
+#            "list"     -> text list      (items use title + note)
+#   items  : the content for that branch
+#
+# To add photos: drop image files into /assets/photos/ and list their paths.
+# ---------------------------------------------------------------------------
+
+center: "Consciousness"
+
+branches:
+  - id: photography
+    label: "Photography"
+    icon: "fas fa-camera"
+    type: gallery
+    items:
+      - { src: "/assets/photos/photo1.jpg", caption: "Golden hour, Berkeley" }
+      - { src: "/assets/photos/photo2.jpg", caption: "Fog over the bay" }
+      - { src: "/assets/photos/photo3.jpg", caption: "Street, Seoul" }
+
+  - id: books
+    label: "Books"
+    icon: "fas fa-book"
+    type: list
+    items:
+      - { title: "Gödel, Escher, Bach", note: "Douglas Hofstadter" }
+      - { title: "The Feeling of What Happens", note: "Antonio Damasio" }
+      - { title: "I Am a Strange Loop", note: "Douglas Hofstadter" }
+
+  - id: cooking
+    label: "Cooking"
+    icon: "fas fa-utensils"
+    type: gallery
+    items:
+      - { src: "/assets/photos/dish1.jpg", caption: "Kimchi jjigae" }
+      - { src: "/assets/photos/dish2.jpg", caption: "Handmade pasta" }
+
+  - id: nature
+    label: "Nature"
+    icon: "fas fa-leaf"
+    type: gallery
+    items:
+      - { src: "/assets/photos/nature1.jpg", caption: "Redwoods" }
+      - { src: "/assets/photos/nature2.jpg", caption: "Sierra trail" }

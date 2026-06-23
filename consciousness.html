@@ -1,0 +1,94 @@
+---
+layout: default
+title: Consciousness
+permalink: /consciousness/
+---
+
+{% assign c = site.data.consciousness %}
+
+<h1>Consciousness</h1>
+<p class="cmind-hint">A map of what I think about outside the lab. Click a branch to explore.</p>
+
+<!-- ---------- Mind map ---------- -->
+<div class="cmind" id="cmind">
+  <!-- connecting lines -->
+  <svg class="cmind-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+    {% for b in c.branches %}
+      {% case forloop.index %}
+        {% when 1 %}{% assign x = 50 %}{% assign y = 14 %}
+        {% when 2 %}{% assign x = 86 %}{% assign y = 50 %}
+        {% when 3 %}{% assign x = 50 %}{% assign y = 86 %}
+        {% when 4 %}{% assign x = 14 %}{% assign y = 50 %}
+        {% when 5 %}{% assign x = 82 %}{% assign y = 18 %}
+        {% when 6 %}{% assign x = 18 %}{% assign y = 82 %}
+        {% else %}{% assign x = 50 %}{% assign y = 50 %}
+      {% endcase %}
+      <line x1="50" y1="50" x2="{{ x }}" y2="{{ y }}"></line>
+    {% endfor %}
+  </svg>
+
+  <!-- center node -->
+  <button class="cmind-center" type="button" data-target="">{{ c.center }}</button>
+
+  <!-- branch nodes -->
+  {% for b in c.branches %}
+    {% case forloop.index %}
+      {% when 1 %}{% assign top = '14%' %}{% assign left = '50%' %}
+      {% when 2 %}{% assign top = '50%' %}{% assign left = '86%' %}
+      {% when 3 %}{% assign top = '86%' %}{% assign left = '50%' %}
+      {% when 4 %}{% assign top = '50%' %}{% assign left = '14%' %}
+      {% when 5 %}{% assign top = '18%' %}{% assign left = '82%' %}
+      {% when 6 %}{% assign top = '82%' %}{% assign left = '18%' %}
+      {% else %}{% assign top = '50%' %}{% assign left = '50%' %}
+    {% endcase %}
+    <button class="cmind-node" type="button" data-target="panel-{{ b.id }}" style="top:{{ top }};left:{{ left }}">
+      <i class="{{ b.icon }}"></i>
+      <span>{{ b.label }}</span>
+    </button>
+  {% endfor %}
+</div>
+
+<!-- ---------- Content panels ---------- -->
+<div class="cmind-panels">
+  {% for b in c.branches %}
+    <section class="cmind-panel" id="panel-{{ b.id }}" hidden>
+      <h2 class="section">{{ b.label }}</h2>
+      {% if b.type == 'gallery' %}
+        <div class="gallery">
+          {% for item in b.items %}
+            <figure class="gallery-item">
+              <img src="{{ item.src | relative_url }}" alt="{{ item.caption }}" loading="lazy">
+              {% if item.caption %}<figcaption>{{ item.caption }}</figcaption>{% endif %}
+            </figure>
+          {% endfor %}
+        </div>
+      {% else %}
+        <ul class="booklist">
+          {% for item in b.items %}
+            <li><span class="bl-title">{{ item.title }}</span>{% if item.note %}<span class="bl-note"> — {{ item.note }}</span>{% endif %}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </section>
+  {% endfor %}
+</div>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.cmind-node');
+    var panels = document.querySelectorAll('.cmind-panel');
+    function showPanel(id) {
+      panels.forEach(function (p) { p.hidden = (p.id !== id); });
+      nodes.forEach(function (n) {
+        n.classList.toggle('active', n.getAttribute('data-target') === id);
+      });
+      var target = document.getElementById(id);
+      if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+    }
+    nodes.forEach(function (n) {
+      n.addEventListener('click', function () { showPanel(n.getAttribute('data-target')); });
+    });
+    // Open the first branch by default
+    if (nodes.length) { showPanel(nodes[0].getAttribute('data-target')); }
+  })();
+</script>

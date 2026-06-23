@@ -14,15 +14,12 @@
   <nav class="site-nav">
     <a href="{{ '/' | relative_url }}">Home</a>
     <a href="{{ '/#publications' | relative_url }}">Publications</a>
-    <a href="{{ '/writings/' | relative_url }}">Writings</a>
-    <a href="{{ '/readings/' | relative_url }}">Readings</a>
-    <a href="{{ '/about/' | relative_url }}">About</a>
+    <a href="{{ '/consciousness/' | relative_url }}">Consciousness</a>
   </nav>
 
   <!-- ---------- Header ---------- -->
   <header class="profile-header">
-    {% if p.photo %}<img src="{{ p.photo | relative_url }}" alt="{{ p.name }}">{% endif %}
-    <div>
+    <div class="profile-text">
       <h1 class="name">{{ p.name }}</h1>
       <p class="role">{{ p.role }}</p>
       {% if p.email_user %}
@@ -38,6 +35,7 @@
         {% endfor %}
       </div>
     </div>
+    {% if p.photo %}<img src="{{ p.photo | relative_url }}" alt="{{ p.name }}">{% endif %}
   </header>
 
   <!-- ---------- Bio ---------- -->

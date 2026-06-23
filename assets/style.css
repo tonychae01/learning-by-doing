@@ -87,21 +87,9 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
   color: var(--muted);
 }
 
-/* Blue highlight emphasis inside the bio (like the reference) */
-.bio strong {
-  font-weight: 400;
-  color: var(--accent);
-  background: var(--accent-soft);
-  padding: .02em .32em;
-  border-radius: 4px;
-}
-.bio em {
-  font-style: normal;
-  color: var(--accent);
-  background: var(--accent-soft);
-  padding: .02em .32em;
-  border-radius: 4px;
-}
+/* Blue emphasis inside the bio (like the reference) */
+.bio strong { color: var(--accent); font-weight: 700; }
+.bio em { color: var(--accent); font-style: italic; }
 .bio code {
   font-family: "Courier New", monospace;
   font-size: .9em;

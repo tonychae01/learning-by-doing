@@ -8,8 +8,8 @@ role: "PhD Student — Neural Engineering & BCI"
 photo: "/assets/tony.jpeg"
 
 # Email is shown lightly obfuscated so bots have a harder time scraping it.
-email_user: "your_email"
-email_domain: "example.com"
+email_user: "tonychae01"
+email_domain: "berkeley dot edu"
 
 # Bio paragraphs. Add as many list items as you like. HTML/links are allowed.
 bio:
@@ -30,6 +30,6 @@ links:
   - { label: "Email",          icon: "fas fa-envelope",      url: "mailto:tonychae01@berkeley.edu" }
   - { label: "Google Scholar", icon: "ai ai-google-scholar", url: "https://scholar.google.com/citations?user=5ipJy-cAAAAJ&hl=en&authuser=1" }
   - { label: "GitHub",         icon: "fab fa-github",        url: "https://github.com/tonychae01" }
-  - { label: "LinkedIn",       icon: "fab fa-linkedin",      url: "https://www.linkedin.com/in/tonychae01" }
-  - { label: "ORCID",          icon: "ai ai-orcid",          url: "https://orcid.org/0000-0000-0000-0000" }
+  - { label: "LinkedIn",       icon: "fab fa-linkedin",      url: "https://www.linkedin.com/in/tony-chae-3bb600249/" }
+  # - { label: "ORCID",          icon: "ai ai-orcid",          url: "https://orcid.org/0000-0000-0000-0000" }
   - { label: "CV",             icon: "fas fa-file-pdf",      url: "/assets/cv.pdf" }

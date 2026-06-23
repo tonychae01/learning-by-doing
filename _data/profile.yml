@@ -12,16 +12,20 @@ email_user: "tonychae01"
 email_domain: "berkeley dot edu"
 
 # Bio paragraphs. Add as many list items as you like. HTML/links are allowed.
+# Tip:  <code>keyword</code>  -> blue highlight (for concepts)
+#       <a href="...">text</a> -> blue link, no highlight (for real links)
 bio:
   - >
-    I’m an engineer and researcher exploring how brain–computer interfaces can
-    bridge perception, intelligence, and meaning. My current work focuses on
-    <strong>closed-loop neurostimulation</strong> and AI-guided signal decoding
-    for neural prosthetics.
+    I’m an engineer and researcher studying how the brain computes — and how we
+    can interface with it. My work centers on three threads:
+    <code>closed-loop neurostimulation</code>,
+    <code>neural population dynamics</code>, and
+    <code>neural engineering for basic science</code>.
   - >
-    I lead <em>Longhorn Neurotech</em> at UT Austin and work on EEG and
-    ultrasound-based neural interfaces. I write here to document ideas at the
-    intersection of neuroscience, AI, and the philosophy of mind.
+    I lead <a href="https://www.longhornneurotech.com/">Longhorn Neurotech</a>
+    at UT Austin, where I work on EEG, EMG, and ultrasound-based neural
+    interfaces. I write here to document ideas at the intersection of
+    neuroscience, AI, and the philosophy of mind.
 
 # Social / academic links shown as icon buttons under your name.
 # icon = Font Awesome (fab/fas) or Academicons (ai) class.

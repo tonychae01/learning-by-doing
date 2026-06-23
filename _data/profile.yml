@@ -4,8 +4,8 @@
 
 name: "Tony Chae"
 role: "PhD Student — Neural Engineering & BCI"
-# Photo lives in /assets/. Replace tony.jpg with your own headshot.
-photo: "/assets/tony.jpg"
+# Photo lives in /assets/. Replace with your own headshot.
+photo: "/assets/tony.jpeg"
 
 # Email is shown lightly obfuscated so bots have a harder time scraping it.
 email_user: "your_email"
@@ -27,7 +27,7 @@ bio:
 # icon = Font Awesome (fab/fas) or Academicons (ai) class.
 # Remove any you don't use; reorder freely.
 links:
-  - { label: "Email",          icon: "fas fa-envelope",      url: "mailto:your_email@example.com" }
+  - { label: "Email",          icon: "fas fa-envelope",      url: "mailto:tonychae01@berkeley.edu" }
   - { label: "Google Scholar", icon: "ai ai-google-scholar", url: "https://scholar.google.com/citations?user=YOUR_ID" }
   - { label: "GitHub",         icon: "fab fa-github",        url: "https://github.com/tonychae01" }
   - { label: "LinkedIn",       icon: "fab fa-linkedin",      url: "https://www.linkedin.com/in/YOUR_HANDLE" }

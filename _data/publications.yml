@@ -1,0 +1,27 @@
+# ---------------------------------------------------------------------------
+# Add a publication by copying one block below. Newest first looks best.
+#
+#   title:    Paper title
+#   authors:  Comma-separated authors. Your name is auto-bolded.
+#   venue:    Conference / journal + year (e.g. "NeurIPS 2024")
+#   image:    (optional) thumbnail in /assets/pub/ — omit if none
+#   selected: true   # (optional) star it as a highlighted paper
+#   links:    list of { name, url } buttons (Paper, Code, Website, PDF, ...)
+# ---------------------------------------------------------------------------
+
+- title: "Example: Closed-Loop EMG Decoding for Silent Speech"
+  authors: "Tony Chae, Co Author, Senior Advisor"
+  venue: "In submission, 2025"
+  selected: true
+  # image: "/assets/pub/decoder.png"   # uncomment after adding a thumbnail
+  links:
+    - { name: "Paper",   url: "https://example.com/paper" }
+    - { name: "Code",    url: "https://github.com/tonychae01/triphone-ssd" }
+    - { name: "Website", url: "https://tonychae01.github.io/learning-by-doing" }
+
+- title: "Example: A Keyboard BCI Speller from Calibration Gaze Data"
+  authors: "Tony Chae, Another Collaborator"
+  venue: "Workshop on Neural Interfaces, 2024"
+  links:
+    - { name: "Paper", url: "https://example.com/paper2" }
+    - { name: "Code",  url: "https://github.com/tonychae01/kbci_speller" }

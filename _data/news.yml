@@ -1,0 +1,9 @@
+# ---------------------------------------------------------------------------
+# Short updates shown in the "News" section. Newest first.
+# Each item: date (free text) + html (links allowed).
+# ---------------------------------------------------------------------------
+
+- date: "Jun 2025"
+  html: "Started a new project on silent-speech EMG decoding."
+- date: "Jan 2025"
+  html: "Released the <a href='https://github.com/tonychae01/kbci_speller'>kbci_speller</a> keyboard BCI prototype."

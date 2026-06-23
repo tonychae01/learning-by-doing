@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.data.profile.name }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+</head>
+<body>
+  {% assign p = site.data.profile %}
+
+  <nav class="site-nav">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="#publications">Publications</a>
+    <a href="{{ '/writings/' | relative_url }}">Writings</a>
+    <a href="{{ '/readings/' | relative_url }}">Readings</a>
+    <a href="{{ '/about/' | relative_url }}">About</a>
+  </nav>
+
+  <!-- ---------- Header ---------- -->
+  <header class="profile-header">
+    {% if p.photo %}<img src="{{ p.photo | relative_url }}" alt="{{ p.name }}">{% endif %}
+    <div>
+      <h1 class="name">{{ p.name }}</h1>
+      <p class="role">{{ p.role }}</p>
+      {% if p.email_user %}
+      <p style="margin:.2rem 0;color:var(--muted)">
+        {{ p.email_user }}<span> at </span>{{ p.email_domain }}
+      </p>
+      {% endif %}
+      <div class="icon-links">
+        {% for link in p.links %}
+          <a href="{{ link.url | relative_url }}" title="{{ link.label }}" aria-label="{{ link.label }}" target="_blank" rel="noopener">
+            <i class="{{ link.icon }}"></i>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </header>
+
+  <!-- ---------- Bio ---------- -->
+  <section class="bio">
+    {% for para in p.bio %}<p>{{ para }}</p>{% endfor %}
+  </section>
+
+  <!-- ---------- News ---------- -->
+  {% if site.data.news and site.data.news.size > 0 %}
+  <h2 class="section">News</h2>
+  <ul class="news-list">
+    {% for item in site.data.news %}
+      <li><span class="date">{{ item.date }}</span><span>{{ item.html }}</span></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <!-- ---------- Publications ---------- -->
+  {% if site.data.publications and site.data.publications.size > 0 %}
+  <h2 class="section" id="publications">Publications</h2>
+  {% assign bold_name = '<strong>' | append: p.name | append: '</strong>' %}
+  {% for pub in site.data.publications %}
+    <div class="pub">
+      {% if pub.image %}
+      <div class="pub-thumb"><img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}"></div>
+      {% endif %}
+      <div class="pub-body">
+        <div class="pub-title">
+          {% if pub.selected %}<span class="star" title="Selected">&#9733;</span> {% endif %}{{ pub.title }}
+        </div>
+        <div class="pub-authors">{{ pub.authors | replace: p.name, bold_name }}</div>
+        <div class="pub-venue">{{ pub.venue }}</div>
+        {% if pub.links %}
+        <div class="pub-links">
+          {% for l in pub.links %}<a href="{{ l.url | relative_url }}" target="_blank" rel="noopener">{{ l.name }}</a>{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+  {% endif %}
+
+  <footer class="site-footer">
+    &copy; {{ site.time | date: "%Y" }} {{ p.name }}
+  </footer>
+</body>
+</html>

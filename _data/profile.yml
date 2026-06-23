@@ -1,0 +1,35 @@
+# ---------------------------------------------------------------------------
+# Edit this file to update your homepage header, bio, and social links.
+# ---------------------------------------------------------------------------
+
+name: "Tony Chae"
+role: "PhD Student — Neural Engineering & BCI"
+# Photo lives in /assets/. Replace tony.jpg with your own headshot.
+photo: "/assets/tony.jpg"
+
+# Email is shown lightly obfuscated so bots have a harder time scraping it.
+email_user: "your_email"
+email_domain: "example.com"
+
+# Bio paragraphs. Add as many list items as you like. HTML/links are allowed.
+bio:
+  - >
+    I’m an engineer and researcher exploring how brain–computer interfaces can
+    bridge perception, intelligence, and meaning. My current work focuses on
+    <strong>closed-loop neurostimulation</strong> and AI-guided signal decoding
+    for neural prosthetics.
+  - >
+    I lead <em>Longhorn Neurotech</em> at UT Austin and work on EEG and
+    ultrasound-based neural interfaces. I write here to document ideas at the
+    intersection of neuroscience, AI, and the philosophy of mind.
+
+# Social / academic links shown as icon buttons under your name.
+# icon = Font Awesome (fab/fas) or Academicons (ai) class.
+# Remove any you don't use; reorder freely.
+links:
+  - { label: "Email",          icon: "fas fa-envelope",      url: "mailto:your_email@example.com" }
+  - { label: "Google Scholar", icon: "ai ai-google-scholar", url: "https://scholar.google.com/citations?user=YOUR_ID" }
+  - { label: "GitHub",         icon: "fab fa-github",        url: "https://github.com/tonychae01" }
+  - { label: "LinkedIn",       icon: "fab fa-linkedin",      url: "https://www.linkedin.com/in/YOUR_HANDLE" }
+  - { label: "ORCID",          icon: "ai ai-orcid",          url: "https://orcid.org/0000-0000-0000-0000" }
+  - { label: "CV",             icon: "fas fa-file-pdf",      url: "/assets/cv.pdf" }

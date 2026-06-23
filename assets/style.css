@@ -91,10 +91,10 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
 .bio strong { color: var(--accent); font-weight: 700; }
 .bio em { color: var(--accent); font-style: italic; }
 .bio code {
-  font-family: "Courier New", monospace;
+  font-family: "SF Mono", "SFMono-Regular", "Menlo", "Consolas", "JetBrains Mono", monospace;
   font-size: .78em;
   font-weight: 700;
-  color: #0d4f8b;
+  color: #1a66ac;
   background: var(--accent-soft);
   padding: .05em .35em;
   border-radius: 4px;

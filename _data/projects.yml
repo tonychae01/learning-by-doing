@@ -1,0 +1,17 @@
+# Projects shown on the Home page (below Selected publications).
+# Add/remove freely. Only entries with a `links` list show link buttons.
+
+- title: "Keyboard BCI Speller"
+  desc: "Calibration-free gaze-to-text speller prototype for brain–computer typing."
+  links:
+    - { name: Code, url: "https://github.com/tonychae01/speller" }
+
+- title: "BCI Pong"
+  desc: "Real-time neural-signal-controlled Pong — closed-loop demo of decoding to control."
+  links: []
+  # add: - { name: Demo, url: "..." }  and/or  - { name: Code, url: "..." }
+
+- title: "Longhorn Neurotech"
+  desc: "Co-founded student org building EEG/EMG/ultrasound neural interfaces at UT Austin."
+  links:
+    - { name: Website, url: "https://www.lhneurotech.com/" }

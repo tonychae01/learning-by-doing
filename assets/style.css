@@ -162,10 +162,31 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
 }
 .star { color: #e0a106; }
 
+/* ---------- Projects (home) ---------- */
+.projects { display: flex; flex-direction: column; gap: 0.9rem; }
+.project {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+}
+.project-title { font-weight: 700; }
+.project-desc { color: var(--muted); margin: 0.25rem 0 0.35rem; font-size: 0.97rem; }
+
 /* ---------- List pages (writings/readings) ---------- */
 .post-list { list-style: none; padding: 0; }
 .post-list li { margin: .5rem 0; }
 .post-list .meta { color: var(--muted); font-size: .92rem; }
+
+/* Writings index — "Month Year » Title" with blue title links */
+.writings-index li {
+  margin: .55rem 0;
+  font-size: 1.08rem;
+  line-height: 1.5;
+}
+.writings-index .meta { margin-right: .15rem; }
+.writings-index .sep { color: var(--muted); margin: 0 .1rem; }
+.writings-index a { color: var(--link); }
+.writings-index a:hover { text-decoration: underline; }
 
 footer.site-footer {
   margin-top: 3rem;

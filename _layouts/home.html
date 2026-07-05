@@ -14,7 +14,7 @@
   <nav class="site-nav">
     <a href="{{ '/' | relative_url }}">Home</a>
     <a href="{{ '/#publications' | relative_url }}">Publications</a>
-    <a href="{{ '/consciousness/' | relative_url }}">Consciousness</a>
+    <a href="{{ '/writings/' | relative_url }}">Writings</a>
   </nav>
 
   <!-- ---------- Header ---------- -->
@@ -78,6 +78,24 @@
       </div>
     </div>
   {% endfor %}
+  {% endif %}
+
+  <!-- ---------- Projects ---------- -->
+  {% if site.data.projects and site.data.projects.size > 0 %}
+  <h2 class="section" id="projects">Projects</h2>
+  <div class="projects">
+    {% for pr in site.data.projects %}
+    <div class="project">
+      <div class="project-title">{{ pr.title }}</div>
+      {% if pr.desc %}<div class="project-desc">{{ pr.desc }}</div>{% endif %}
+      {% if pr.links %}
+      <div class="pub-links">
+        {% for l in pr.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.name }}</a>{% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
   {% endif %}
 
   <footer class="site-footer">

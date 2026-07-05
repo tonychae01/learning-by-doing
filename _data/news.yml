@@ -3,7 +3,13 @@
 # Each item: date (free text) + html (links allowed).
 # ---------------------------------------------------------------------------
 
-- date: "Jun 2025"
-  html: "Started a new project on SSL EMG decoding."
-- date: "Jan 2025"
-  html: "Released the <a href='https://github.com/tonychae01/speller'>speller</a> keyboard BCI prototype."
+- date: "2026"
+  html: "Heading to a <strong>PhD in EECS at UC Berkeley</strong> this fall."
+- date: "May 2026"
+  html: "Joined <strong>Microsoft Research</strong> (Audio &amp; Acoustics / BCI) as an Undergraduate Research Intern."
+- date: "2024\u20132025"
+  html: "Ran <a href='https://www.lhneurotech.com/'>Longhorn Neurotech</a> (200+ members) \u2014 securing grants, hosting seminars, and leading BCI projects (BCI Pong, Future of Neural Engineering forum)."
+- date: "Dec 2023"
+  html: "Co-founded <a href='https://www.lhneurotech.com/'>Longhorn Neurotech</a> \u2014 UT Austin\u2019s first BCI community."
+- date: "Jan 2023"
+  html: "Joined <strong>NASA</strong> Johnson Space Center as a Software Development Intern."

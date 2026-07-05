@@ -10,21 +10,9 @@
 #   links:    list of { name, url } buttons (Paper, Code, Website, PDF, ...)
 # ---------------------------------------------------------------------------
 
-- title: "Example: Microsoft Research"
-  authors: "Tony Chae, Co Author, Senior Advisor"
-  venue: "In submission, 2025"
-  badge: "In submission"
+- title: "(Paper in preparation \u2014 title coming soon)"
+  authors: "Tony Chae"
+  venue: "In preparation, 2026"
+  badge: "In prep"
   selected: true
-  # image: "/assets/pub/decoder.png"   # uncomment after adding a thumbnail
-  links:
-    - { name: "Paper",   url: "https://example.com/paper" }
-    - { name: "Code",    url: "https://github.com/tonychae01/project" }
-    - { name: "Website", url: "https://tonychae01.github.io/learning-by-doing" }
-
-- title: "Example: A Keyboard BCI Speller from Calibration Gaze Data"
-  authors: "Tony Chae, Another Collaborator"
-  venue: "Workshop on Neural Interfaces, 2024"
-  badge: "Workshop '24"
-  links:
-    - { name: "Paper", url: "https://example.com/paper2" }
-    - { name: "Code",  url: "https://github.com/tonychae01/speller" }
+  # Replace this with your real paper: title / authors / venue / links.

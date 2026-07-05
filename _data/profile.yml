@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------------------
 
 name: "Tony Chae"
-role: "PhD Candidate @ UC Berkeley EECS"
+role: "Incoming PhD @ UC Berkeley EECS"
 # Photo lives in /assets/. Replace with your own headshot.
 photo: "/assets/tony.jpeg"
 
@@ -23,9 +23,10 @@ bio:
     <code>Neural engineering for basic science</code>.
   - >
     I co-founded <a href="https://www.lhneurotech.com/">Longhorn Neurotech</a>
-    at UT Austin, where I work on EEG, EMG, and ultrasound-based neural
-    interfaces. I write here to document ideas at the intersection of
-    neuroscience, AI, and the philosophy of mind.
+    at UT Austin, and I'm currently an undergraduate research intern at
+    <strong>Microsoft Research</strong> (Audio &amp; Acoustics / BCI), heading to a
+    PhD in EECS at <strong>UC Berkeley</strong>. I write here to document ideas at
+    the intersection of neuroscience, AI, and the philosophy of mind.
 
 # Social / academic links shown as icon buttons under your name.
 # icon = Font Awesome (fab/fas) or Academicons (ai) class.

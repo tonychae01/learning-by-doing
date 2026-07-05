@@ -1,0 +1,14 @@
+# Projects shown on the Home page (below Selected publications).
+# Keep this to real, built technical work only (research/engineering artifacts).
+# Leadership/affiliations (e.g. Longhorn Neurotech) live in the bio, not here.
+# Essays/philosophy live in Writings.
+
+- title: "Keyboard BCI Speller"
+  desc: "Calibration-free gaze-to-text speller prototype for brain–computer typing."
+  links:
+    - { name: Code, url: "https://github.com/tonychae01/speller" }
+
+- title: "BCI Pong"
+  desc: "Real-time neural-signal-controlled Pong — a closed-loop decoding-to-control demo."
+  links: []
+  # add when ready: - { name: Demo, url: "..." }   - { name: Code, url: "..." }

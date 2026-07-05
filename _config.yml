@@ -8,18 +8,10 @@ collections:
   writings:
     output: true
     permalink: /writings/:name/
-  readings:
-    output: true
-    permalink: /readings/:name/
 
 defaults:
   - scope:
       path: ""
       type: writings
-    values:
-      layout: default
-  - scope:
-      path: ""
-      type: readings
     values:
       layout: default

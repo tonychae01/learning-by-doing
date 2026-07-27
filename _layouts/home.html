@@ -91,7 +91,7 @@
   {% endif %}
 
   <footer class="site-footer">
-    &copy; {{ site.time | date: "%Y" }} {{ p.name }}
+    &copy; {{ site.time | date: "%Y" }} <a href="{{ '/' | relative_url }}">{{ p.name }}</a>
   </footer>
 </body>
 </html>

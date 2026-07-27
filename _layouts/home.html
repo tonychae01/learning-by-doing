@@ -4,6 +4,17 @@
   <meta charset="utf-8">
   <title>{{ site.data.profile.name }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.data.profile.role | escape }}">
+  <meta property="og:title" content="{{ site.data.profile.name }}">
+  <meta property="og:description" content="{{ site.data.profile.role | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ site.data.profile.photo | absolute_url }}">
+  <meta property="og:image:alt" content="{{ site.data.profile.name }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ site.data.profile.name }}">
+  <meta name="twitter:description" content="{{ site.data.profile.role | escape }}">
+  <meta name="twitter:image" content="{{ site.data.profile.photo | absolute_url }}">
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">

@@ -75,9 +75,10 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
 }
 .avatar {
   width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 50%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 4px;
 }
 .email-line {
   margin: .9rem 0 0;
@@ -233,7 +234,7 @@ footer.site-footer {
   .intro { grid-template-columns: 1fr; justify-items: center; gap: 1.25rem; }
   .intro-main { width: 100%; }
   .intro-side { width: 100%; }
-  .avatar { width: 200px; height: 200px; }
+  .avatar { width: 200px; height: auto; }
   .icon-links { justify-content: flex-start; }
   .bio-background-row { grid-template-columns: 1fr; gap: .25rem; }
   .pub { grid-template-columns: 1fr; gap: 1rem; }

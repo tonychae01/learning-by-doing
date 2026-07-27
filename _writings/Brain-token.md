@@ -5,7 +5,7 @@ date: 2026-07-26
 summary: ""
 ---
 
-# Brain Token: What If Learning Became a Form of Currency?
+## Brain Token: What If Learning Became a Form of Currency?
 
 During my internship at Microsoft Research, I had an interesting conversation with my friend Eric Cui, whose background is in blockchain and fintech. My own work focuses on brain-computer interfaces and neural foundation models.
 
@@ -17,17 +17,14 @@ That conversation led to a simple hypothesis:
 
 ---
 
-## The Currency Problem
-
 Capitalism has historically attached currency to productivity. Labor creates measurable output, and currency assigns value to that output. Learning sits underneath this system: it makes future productivity possible, but rarely counts as productive labor on its own.
 
 Because learning is not directly valued, it is easily reframed as a matter of individual willpower. People are expected to study after work, keep up with new tools, and become more capable on their own time. Under pressure to produce, many will eventually abandon the slower process of learning—not because they lack curiosity, but because the economic structure rewards its outcome while ignoring the effort that creates it.
 
 AI intensifies this mismatch. Senior researchers can use AI effectively because they already possess the knowledge needed to judge its output. Junior researchers still need time to build that knowledge, yet the same tools raise expectations for immediate productivity. The more efficient AI becomes, the harder it can be to justify the time required to understand something deeply.
 
----
 
-## Brain Token
+### Brain Token
 
 Recent advances in wearable neurotechnology make it increasingly possible to estimate aspects of cognitive effort/load from biosignals (e.g., more gamma power, blood oxygenation concentration rate). This suggests a speculative concept I call **Brain Token**: a digital token representing verified effort devoted to learning.
 
@@ -41,15 +38,10 @@ This way, companies would gain an incentive to develop junior talent, while earl
 
 ---
 
-## This Should Never Become Surveillance
-
 This idea should never become a system that monitors or evaluates people based on brain activity. Brain signals are imperfect, people think differently, and creativity cannot be reduced to a neural metric.
 
 If such a system ever existed, participation would need to be voluntary and privacy-preserving, with the data and any resulting tokens entirely owned by the individual. Brain activity should never determine someone's salary, opportunities, or worth.
 
----
-
-## The Real Idea
 
 Brain Token is ultimately less about inventing a token than about redefining labor for an era in which machines perform an increasing share of production. If productivity is no longer uniquely human, perhaps currency should not recognize only what we produce. Perhaps it should also recognize the effort through which we continue to change what we are capable of producing.
 

@@ -29,16 +29,19 @@ bio:
   - >
     During my undergraduate studies, I worked on real-time AI for a DARPA-funded
     wearable focused ultrasound system for closed-loop sleep modulation under
-    <em>Huiliang Wang</em> and <em>José del R. Millán</em>. I also worked on optimizing single-neuron
-    closed-loop stimulation using in vivo calcium imaging under <em>Leif Fenno</em>.
+    <a href="https://scholar.google.com/scholar?q=Huiliang+Wang">Huiliang Wang</a> and
+    <a href="https://scholar.google.com/scholar?q=Jose+del+R.+Millan">José del R. Millán</a>.
+    I also worked on optimizing single-neuron closed-loop stimulation using in vivo
+    calcium imaging under <a href="https://scholar.google.com/scholar?q=Leif+Fenno">Leif Fenno</a>.
   - >
     At UT Austin, I co-founded and grew
     <a href="https://www.instagram.com/lhneurotech/">Longhorn Neurotech</a> into a
     250-member BCI community, leading outreach initiatives across Texas and the
     United States. I also interned at
     <a href="https://www.microsoft.com/en-us/research/group/audio-and-acoustics-research-group/">Microsoft Research's Audio and Acoustics Research Group</a>,
-    where I worked with Ivan Tashev and Dimitra Emmanouilidou on self-supervised
-    foundation models for transferable neurovascular representations.
+    where I worked with <a href="https://scholar.google.com/scholar?q=Ivan+Tashev">Ivan Tashev</a>
+    and <a href="https://scholar.google.com/scholar?q=Dimitra+Emmanouilidou">Dimitra Emmanouilidou</a>
+    on self-supervised foundation models for transferable neurovascular representations.
   - >
     I write here to document ideas at the intersection of neuroscience, AI, and
     the philosophy of mind.

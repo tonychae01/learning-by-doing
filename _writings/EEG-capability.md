@@ -17,13 +17,13 @@ As a BCI researcher, however, I want to take a moment to rethink what this marke
 
 I am focusing here on scalp EEG, not invasive technologies such as ECoG, Neuropixels, or other implanted interfaces. Those tools involve a very different trade-off between risk and the richness of the neural activity they can probe.
 
-- 1. EEG only measures electrical activity, not the entire neurobiology
-- 2. EEG electrode lacks anatomical space
-- 3. EEG has limited access to deep brain regions
-- 4. EEG is a coarse brain-state estimator, not a fine-neuron decoder
-- 5. EEG is highly susceptible to noise
-- 6. EEG varies across people and across time
-- 7. EEG is powerful when the claim matches the signal
+1. EEG only measures electrical activity, not the entire neurobiology
+2. Electrode space is not anatomical space
+3. EEG has limited access to deep brain regions
+4. EEG is a coarse brain-state estimator, not a fine-neuron decoder
+5. EEG is highly susceptible to noise
+6. EEG varies across people and across time
+7. EEG is powerful when the claim matches the signal
 
 ---
 

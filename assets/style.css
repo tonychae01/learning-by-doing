@@ -71,7 +71,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
 .intro-main { min-width: 0; }
 .intro-side {
   width: 220px;
-  padding-top: 60px;
+  padding-top: 68px;
   text-align: center;
 }
 .avatar {

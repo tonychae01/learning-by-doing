@@ -19,8 +19,12 @@
     {{ content }}
   </main>
 
+  {% if page.collection == "writings" %}
+    {% include subscribe.html %}
+  {% endif %}
+
   <footer class="site-footer">
-    &copy; {{ site.time | date: "%Y" }} {{ site.title }}
+    &copy; {{ site.time | date: "%Y" }} <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
   </footer>
 </body>
 </html>

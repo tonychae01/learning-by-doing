@@ -1,0 +1,14 @@
+{% if site.buttondown_username and site.buttondown_username != "" %}
+<section class="subscribe" aria-label="Email subscription">
+  <form action="https://buttondown.com/api/emails/embed-subscribe/{{ site.buttondown_username }}" method="post" class="subscribe-form embeddable-buttondown-form">
+    <label for="bd-email">Enter your email</label>
+    <p>Occasionally sharing ideas in neuroscience, AI, and the philosophy of mind.</p>
+    <input id="bd-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+    <button type="submit">Subscribe</button>
+    <small>
+      Powered by
+      <a href="https://buttondown.com/refer/{{ site.buttondown_username }}" target="_blank" rel="noopener">Buttondown</a>.
+    </small>
+  </form>
+</section>
+{% endif %}

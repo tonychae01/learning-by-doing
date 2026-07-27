@@ -3,6 +3,7 @@ description: "writings"
 url: "https://tonychae01.github.io"
 baseurl: "/learning-by-doing"
 markdown: kramdown
+buttondown_username: "tonyschae"
 
 collections:
   writings:

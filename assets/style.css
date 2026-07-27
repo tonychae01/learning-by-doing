@@ -221,6 +221,50 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
 .writings-index a { color: var(--link); }
 .writings-index a:hover { text-decoration: underline; }
 
+.subscribe {
+  margin-top: 3rem;
+  max-width: 480px;
+}
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #f5f6f7;
+}
+.subscribe-form label { font-weight: 600; }
+.subscribe-form p { margin: -.15rem 0 .1rem; color: var(--muted); font-size: .92rem; }
+.subscribe-form input {
+  padding: .6rem .7rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--text);
+  font: inherit;
+}
+.subscribe-form input:focus {
+  border-color: var(--accent);
+  outline: 2px solid var(--accent-soft);
+  outline-offset: 1px;
+}
+.subscribe-form button {
+  padding: .6rem .9rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  background: var(--accent);
+  color: #fff;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: .833em;
+  font-weight: 600;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+.subscribe-form button:hover { filter: brightness(.92); }
+.subscribe-form small { color: var(--muted); text-align: center; }
+.subscribe-form small a { color: inherit; }
+
 footer.site-footer {
   margin-top: 3rem;
   padding-top: 1rem;

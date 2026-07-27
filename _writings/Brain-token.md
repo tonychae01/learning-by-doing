@@ -15,8 +15,6 @@ That conversation led to a simple hypothesis:
 
 > **What if the effort we invest in learning could become a form of value?**
 
----
-
 Capitalism has historically attached currency to productivity. Labor creates measurable output, and currency assigns value to that output. Learning sits underneath this system: it makes future productivity possible, but rarely counts as productive labor on its own.
 
 Because learning is not directly valued, it is easily reframed as a matter of individual willpower. People are expected to study after work, keep up with new tools, and become more capable on their own time. Under pressure to produce, many will eventually abandon the slower process of learning—not because they lack curiosity, but because the economic structure rewards its outcome while ignoring the effort that creates it.

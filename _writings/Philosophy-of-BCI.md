@@ -5,6 +5,8 @@ date: 2025-08-11
 summary: ""
 ---
 
+## Philosophy of Brain-computer interface
+
 After decades of debate in robotics and AI ethics, the exponential growth of technology now brings us to the next frontier: *neuroethics*.
 
 One of the biggest differences between brain–computer interfaces (BCI) and modern media or information technology is the direct access such technology has to neural pathways—the ability to bypass them and to modulate their dynamics. Even large language models and overstimulating media, with their visual and auditory stimuli, can strongly reshape our behavior, beliefs, and attention by letting us delegate our cognition and private thoughts to AI. If these comparatively indirect technologies are already so influential, how disruptive could BCI be when misused?
@@ -12,6 +14,8 @@ One of the biggest differences between brain–computer interfaces (BCI) and mod
 Yet there is a less recognized ethical dimension of BCI that lies beyond normative ethics. By "ethics" here I mean questions of how to regulate, use, and deploy the technology safely and how to protect privacy. What remains far less understood is how the *form* of the technology itself—and the way we define its goals and loss functions, and on what philosophical framework—shapes its real impact on patients and people. This is what I would like to address as the first principles of BCI.
 
 Now is the time for a **"Philosophy of BCI"** beyond the "Ethics of BCI."
+
+---
 
 Abstract of the essay:
 

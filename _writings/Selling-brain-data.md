@@ -5,6 +5,8 @@ date: 2026-06-28
 summary: "Who owns neural data, and can BCI avoid the proprietary-data incentives of AI and social media?"
 ---
 
+## Should We Be Allowed to Sell Our Brain Data?
+
 As physical AI takes off, it's easy to find examples of workers in low-resource countries wearing head-mounted cameras and performing everyday chores to help robots gather labeled data from the physical world. This echoes what fueled the computer-vision boom a decade ago, when ImageNet (Fei-Fei Li) supplied the labeled data that modern vision models were built on. So why wouldn't the same thing happen to neurotechnology once these devices are commercialized?
 
 One question has been on my mind since a recent conversation with a friend, Caleb McKinney: why don't companies like Neuralink openly share anonymized brain data collected from patients?

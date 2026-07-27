@@ -1,6 +1,17 @@
 ---
 layout: default
-title: "test"
-date: 2026-07-28
-summary: ""
+title: "Test"
+date: 2025-10-09
+summary: "This is a test summar"
 ---
+
+What is this?
+
+
+```python
+Coding test- python
+print (hello)
+```
+
+
+end

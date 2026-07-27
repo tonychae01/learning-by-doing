@@ -11,7 +11,7 @@
 # ---------------------------------------------------------------------------
 
 - title: "Skin-attached bioadhesive patch enabling ultrasound deep brain stimulation and real-time electrophysiological monitoring for REM sleep enhancement"
-  authors: "Kai Wing Kevin Tang, Benjamin Baird, William D. Moscoso-Barrera, Mengxia Yu, Mengmeng Yao, Jinmo Jeong, Ilya Pyatnitskiy, Anakaren Romero Lozano, Jiachen Wang, Ju-Chun Hsieh, <strong>Tony Sungjin Chae</strong>, Daniel Song, Julieta Garcia, Rithvik Mittapalli, Adam Bush, Wynn Legon, Vincent Mysliwiec, Gregory A. Fonzo, Huiliang Wang"
+  authors: "Kai Wing Kevin Tang, Benjamin Baird, William D. Moscoso-Barrera, Mengxia Yu, Mengmeng Yao, Jinmo Jeong, Ilya Pyatnitskiy, Anakaren Romero Lozano, Jiachen Wang, Ju-Chun Hsieh, Tony Sungjin Chae, Daniel Song, Julieta Garcia, Rithvik Mittapalli, Adam Bush, Wynn Legon, Vincent Mysliwiec, Gregory A. Fonzo, Huiliang Wang"
   venue: "Nature Communications 17, 5570 (2026)"
   badge: "Nature Comms"
   image: "/assets/pub/darpa-neusleep.png"
@@ -20,7 +20,7 @@
     - { name: "Article", url: "https://www.nature.com/articles/s41467-026-73787-6" }
 
 - title: "Postprocessing-Enhanced Machine Learning for Reliable Real-Time Sleep Staging in Closed-Loop Neuromodulation"
-  authors: "<strong>Tony Sungjin Chae</strong>, Jinmo Jeong, Kevin Kai Wing Tang, William D. Moscoso-Barrera, Benjamin Baird, Xue-Xin Wei, José del R. Millán, Huiliang Wang"
+  authors: "Tony Sungjin Chae*, Jinmo Jeong, Kevin Kai Wing Tang, William D. Moscoso-Barrera, Benjamin Baird, Xue-Xin Wei, José del R. Millán, Huiliang Wang"
   venue: "bioRxiv, 2025.09.22.677765 (2025)"
   badge: "bioRxiv '25"
   image: "/assets/pub/postprocessing-sleep.png"
@@ -29,7 +29,7 @@
     - { name: "Article", url: "https://www.biorxiv.org/content/10.1101/2025.09.22.677765.abstract" }
 
 - title: "Philosophy of Brain-Computer Interface"
-  authors: "<strong>Tony Sungjin Chae</strong>, Kyuin Chae"
+  authors: "Tony Sungjin Chae*, Kyuin Chae"
   venue: "OSF Preprints (2025)"
   image: "/assets/pub/philosophy-bci.jpg"
   badge: "OSF '25"
@@ -37,7 +37,7 @@
     - { name: "Article", url: "https://osf.io/preprints/osf/hgajv_v1" }
 
 - title: "Stretchable, hair-compatible, and long-term stable wearable EEG system"
-  authors: "Ju-Chun Hsieh, Mengmeng Yao, Hussein Mostafa Alawieh, Victoria Koptelova, Satyam Kumar, Kevin Kai Wing Tang, Wenliang Wang, Jinmo Jeong, Hong Ding, <strong>Tony Sungjin Chae</strong>, Zoya Ahmad, Derek Wang, Tlali Engrav, Reyna Wang, Ashwin Gupta, Weilong He, William D. Moscoso-Barrera, Ayden Grimes, José del R. Millán, Huiliang Wang"
+  authors: "Ju-Chun Hsieh, Mengmeng Yao, Hussein Mostafa Alawieh, Victoria Koptelova, Satyam Kumar, Kevin Kai Wing Tang, Wenliang Wang, Jinmo Jeong, Hong Ding, Tony Sungjin Chae, Zoya Ahmad, Derek Wang, Tlali Engrav, Reyna Wang, Ashwin Gupta, Weilong He, William D. Moscoso-Barrera, Ayden Grimes, José del R. Millán, Huiliang Wang"
   venue: "bioRxiv, 2025.04.28.651043 (2025)"
   badge: "bioRxiv '25"
   image: "/assets/pub/stretchable-eeg.png"

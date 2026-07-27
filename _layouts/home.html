@@ -17,29 +17,33 @@
     <a href="{{ '/writings/' | relative_url }}">Writings</a>
   </nav>
 
-  <!-- ---------- Header ---------- -->
-  <header class="profile-header">
-    <h1 class="name">{% assign nm = p.name | split: ' ' %}<span class="name-first">{{ nm[0] }}</span>{% for w in nm offset:1 %} {{ w }}{% endfor %}</h1>
-    <p class="role">{{ p.role }}</p>
-    <div class="icon-links">
-      {% for link in p.links %}
-        <a href="{{ link.url | relative_url }}" title="{{ link.label }}" aria-label="{{ link.label }}" target="_blank" rel="noopener">
-          <i class="{{ link.icon }}"></i>
-        </a>
-      {% endfor %}
-    </div>
-  </header>
-
-  <!-- ---------- Intro: bio (left) + photo (right) ---------- -->
+  <!-- ---------- Intro ---------- -->
   <div class="intro">
-    <div class="intro-text bio">
-      {% for para in p.bio %}<p>{{ para }}</p>{% endfor %}
-    </div>
     <aside class="intro-side">
       {% if p.photo %}<img class="avatar" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">{% endif %}
       {% if p.email_user %}<p class="email-line">Email: {{ p.email_user }} at {{ p.email_domain }}</p>{% endif %}
     </aside>
+    <div class="intro-main">
+      <header class="profile-header">
+        <h1 class="name">{% assign nm = p.name | split: ' ' %}<span class="name-first">{{ nm[0] }}</span>{% for w in nm offset:1 %} {{ w }}{% endfor %}</h1>
+        <p class="role">{{ p.role }}</p>
+        <div class="icon-links">
+          {% for link in p.links %}
+            <a href="{{ link.url | relative_url }}" title="{{ link.label }}" aria-label="{{ link.label }}" target="_blank" rel="noopener">
+              <i class="{{ link.icon }}"></i>
+            </a>
+          {% endfor %}
+        </div>
+      </header>
+      <div class="bio bio-lead">
+        {% for para in p.bio limit:2 %}<p>{{ para }}</p>{% endfor %}
+      </div>
+    </div>
   </div>
+  <div class="bio bio-background">
+    {% for para in p.bio offset:2 limit:2 %}<p>{{ para }}</p>{% endfor %}
+  </div>
+  <div class="bio bio-note">{{ p.bio[4] }}</div>
 
   <!-- ---------- News ---------- -->
   {% if site.data.news and site.data.news.size > 0 %}
@@ -54,26 +58,25 @@
   <!-- ---------- Publications ---------- -->
   {% if site.data.publications and site.data.publications.size > 0 %}
   <h2 class="section" id="publications">Selected publications</h2>
-  {% assign bold_name = '<strong>' | append: p.name | append: '</strong>' %}
   {% for pub in site.data.publications %}
     <div class="pub">
-      <div class="pub-thumb">
-        {% if pub.image %}
-          <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}">
-        {% else %}
-          <div class="pub-badge">{{ pub.badge | default: pub.venue }}</div>
-        {% endif %}
-      </div>
       <div class="pub-body">
         <div class="pub-title">
           {% if pub.selected %}<span class="star" title="Selected">&#9733;</span> {% endif %}{{ pub.title }}
         </div>
-        <div class="pub-authors">{{ pub.authors | replace: p.name, bold_name }}</div>
+        <div class="pub-authors">{{ pub.authors }}</div>
         <div class="pub-venue">{{ pub.venue }}</div>
         {% if pub.links %}
         <div class="pub-links">
           {% for l in pub.links %}<a href="{{ l.url | relative_url }}" target="_blank" rel="noopener">{{ l.name }}</a>{% endfor %}
         </div>
+        {% endif %}
+      </div>
+      <div class="pub-thumb">
+        {% if pub.image %}
+          <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}">
+        {% else %}
+          <div class="pub-badge">{{ pub.badge | default: pub.venue }}</div>
         {% endif %}
       </div>
     </div>

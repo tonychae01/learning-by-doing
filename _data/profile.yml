@@ -16,17 +16,32 @@ email_domain: "berkeley dot edu"
 #       <a href="...">text</a> -> blue link, no highlight (for real links)
 bio:
   - >
-    I’m an engineer and researcher studying how the brain computes — and how we
-    can interface with it. My work centers on three threads:
+    I am a PhD student in Electrical Engineering and Computer Sciences at
+    <a href="https://eecs.berkeley.edu/">UC Berkeley</a>, advised by Edward Chang
+    and Gopala Anumanchipalli (tentative).
+  - >
+    I research how data-driven AI models can advance our understanding of neural
+    computation and build bidirectional brain-computer interfaces (BCI) to safely
+    interact with our nervous system. My work centers on three threads:
     <code>Closed-loop neurostimulation</code>,
     <code>Neural population dynamics</code>, and
     <code>Neural engineering for basic science</code>.
   - >
-    I co-founded <strong>Longhorn Neurotech</strong>
-    at UT Austin, and I'm currently an undergraduate research intern at
-    <strong>Microsoft Research</strong> (Audio &amp; Acoustics / BCI), heading to a
-    PhD in EECS at <strong>UC Berkeley</strong>. I write here to document ideas at
-    the intersection of neuroscience, AI, and the philosophy of mind.
+    During my undergraduate studies, I worked on real-time AI for a DARPA-funded
+    wearable focused ultrasound system for closed-loop sleep modulation under
+    Huiliang Wang and José del R. Millán. I also worked on optimizing single-neuron
+    closed-loop stimulation using in vivo calcium imaging under Leif Fenno.
+  - >
+    At UT Austin, I co-founded and grew
+    <a href="https://www.instagram.com/lhneurotech/">Longhorn Neurotech</a> into a
+    250-member BCI community, leading outreach initiatives across Texas and the
+    United States. I also interned at
+    <a href="https://www.microsoft.com/en-us/research/group/audio-and-acoustics-research-group/">Microsoft Research's Audio and Acoustics Research Group</a>,
+    where I worked with Ivan Tashev and Dimitra Emmanouilidou on self-supervised
+    foundation models for transferable neurovascular representations.
+  - >
+    I write here to document ideas at the intersection of neuroscience, AI, and
+    the philosophy of mind.
 
 # Social / academic links shown as icon buttons under your name.
 # icon = Font Awesome (fab/fas) or Academicons (ai) class.

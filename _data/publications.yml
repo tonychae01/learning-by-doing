@@ -20,7 +20,7 @@
     - { name: "Article", url: "https://www.nature.com/articles/s41467-026-73787-6" }
 
 - title: "Postprocessing-Enhanced Machine Learning for Reliable Real-Time Sleep Staging in Closed-Loop Neuromodulation"
-  authors: "Tony Sungjin Chae*, Jinmo Jeong, Kevin Kai Wing Tang, William D. Moscoso-Barrera, Benjamin Baird, Xue-Xin Wei, José del R. Millán, Huiliang Wang"
+  authors: "Tony Sungjin Chae, Jinmo Jeong, Kevin Kai Wing Tang, William D. Moscoso-Barrera, Benjamin Baird, Xue-Xin Wei, José del R. Millán, Huiliang Wang"
   venue: "bioRxiv, 2025.09.22.677765 (2025)"
   badge: "bioRxiv '25"
   image: "/assets/pub/postprocessing-sleep.png"
@@ -29,7 +29,7 @@
     - { name: "Article", url: "https://www.biorxiv.org/content/10.1101/2025.09.22.677765.abstract" }
 
 - title: "Philosophy of Brain-Computer Interface"
-  authors: "Tony Sungjin Chae*, Kyuin Chae"
+  authors: "Tony Sungjin Chae, Kyuin Chae"
   venue: "OSF Preprints (2025)"
   image: "/assets/pub/philosophy-bci.jpg"
   badge: "OSF '25"

@@ -41,7 +41,14 @@
     </div>
   </div>
   <div class="bio bio-background">
-    {% for para in p.bio offset:2 limit:2 %}<p>{{ para }}</p>{% endfor %}
+    <div class="bio-background-row">
+      <div class="bio-background-label">Research</div>
+      <p>{{ p.bio[2] }}</p>
+    </div>
+    <div class="bio-background-row">
+      <div class="bio-background-label">Leadership &amp; industry</div>
+      <p>{{ p.bio[3] }}</p>
+    </div>
   </div>
   <div class="bio bio-note">{{ p.bio[4] }}</div>
 
@@ -62,7 +69,7 @@
     <div class="pub">
       <div class="pub-body">
         <div class="pub-title">
-          {% if pub.selected %}<span class="star" title="Selected">&#9733;</span> {% endif %}{{ pub.title }}
+          {{ pub.title }}
         </div>
         <div class="pub-authors">{{ pub.authors }}</div>
         <div class="pub-venue">{{ pub.venue }}</div>

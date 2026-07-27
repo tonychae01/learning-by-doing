@@ -16,9 +16,8 @@ email_domain: "berkeley dot edu"
 #       <a href="...">text</a> -> blue link, no highlight (for real links)
 bio:
   - >
-    I am a PhD student in Electrical Engineering and Computer Sciences at
-    <a href="https://eecs.berkeley.edu/">UC Berkeley</a>, advised by Edward Chang
-    and Gopala Anumanchipalli (tentative).
+    I am an incoming PhD student in Electrical Engineering and Computer Sciences at
+    <a href="https://eecs.berkeley.edu/">UC Berkeley</a>.
   - >
     I research how data-driven AI models can advance our understanding of neural
     computation and build bidirectional brain-computer interfaces (BCI) to safely

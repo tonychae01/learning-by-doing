@@ -36,10 +36,10 @@
   links:
     - { name: "Article", url: "https://osf.io/preprints/osf/hgajv_v1" }
 
-- title: "Stretchable, hair-compatible, and long-term stable wearable EEG system"
+- title: "Highly Stretchable, Hair-Compatible, Multichannel Neural Interface with Time-Stable Hydrogel for High-Fidelity Continuous EEG Sensing"
   authors: "Ju-Chun Hsieh, Mengmeng Yao, Hussein Mostafa Alawieh, Victoria Koptelova, Satyam Kumar, Kevin Kai Wing Tang, Wenliang Wang, Jinmo Jeong, Hong Ding, Tony Sungjin Chae, Zoya Ahmad, Derek Wang, Tlali Engrav, Reyna Wang, Ashwin Gupta, Weilong He, William D. Moscoso-Barrera, Ayden Grimes, José del R. Millán, Huiliang Wang"
-  venue: "bioRxiv, 2025.04.28.651043 (2025)"
-  badge: "bioRxiv '25"
+  venue: "Science Advances (Accepted)"
+  badge: "Sci. Adv."
   image: "/assets/pub/stretchable-eeg.png"
   links:
-    - { name: "Article", url: "https://www.biorxiv.org/content/10.1101/2025.04.28.651043.abstract" }
+    - { name: "Preprint", url: "https://www.biorxiv.org/content/10.1101/2025.04.28.651043.abstract" }

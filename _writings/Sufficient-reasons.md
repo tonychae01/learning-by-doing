@@ -108,3 +108,9 @@ So, in summary, using the fourfold root, we can ask questions using the same fra
 4. **Behavioral probe** - When and who is it for? (Acting / Willing)
 
     goal / context / intention
+
+
+---
+**Further reading**
+
+- Schopenhauer, Arthur. On the fourfold root of the principle of sufficient reason. Open Court Publishing, 1974.

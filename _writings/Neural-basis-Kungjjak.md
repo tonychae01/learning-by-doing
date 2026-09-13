@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Neural Basis of Kungjjak"
+title: "Neural Basis of \"Kungjjak\""
 date: 2026-08-15
 summary: ""
 ---

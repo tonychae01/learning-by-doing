@@ -5,7 +5,9 @@ date: 2026-09-12
 summary: ""
 ---
 
-## Why do I suggest reading this, and how is it useful?
+## Principles of Sufficient Reason for Scientific Inquiries
+
+### Why do I suggest reading this, and how is it useful?
 
 As a philosophy lover myself (I will someday add a writing about why I love philosophy and why it is so valuable), one of my favorite books is *The World as Will and Representation* by Schopenhauer. To conquer this book, there were many challenges and prerequisites, including Kantian books (*Critique of Pure Reason* to *Critique of Practical Reason*), Western philosophical history, and some knowledge of the Upanishads and Indian philosophy. But the most important prerequisite that I enjoyed the most was his 1847 revised work, *The Fourfold Root of the Principle of Sufficient Reason*.
 
@@ -19,7 +21,7 @@ Today, I want to talk about the “metaphysics” of asking questions itself, an
     4. Behavioral probe (Willing)
 
 
-## Asking scientific inquiries requires understanding their limits and scope
+### Asking scientific inquiries requires understanding their limits and scope
 
 Some say there are no dumb questions... but I think there may be some. For example, asking the exact same question the previous person asked, asking a totally unrelated question outside the scope, or asking questions just to show off one's knowledge might not be very helpful.
 
@@ -39,7 +41,7 @@ The challenges of understanding a question are often because it is:
 
 When we talk about asking questions (which I think is, if not the only reason, one of the main reasons why our intelligence exists and what it is for, as Kant suggested), it is about **seeking sufficient reasons** for the phenomena that we observe or experience.
 
-## Fourfold Root of Sufficient Reason
+### Fourfold Root of Sufficient Reason
 
 What is sufficient reason? For me, sufficient reason is about seeking the reason why something has to be in that state or for that reason rather than another one. It has often been treated as one of the fundamental premises of logic and metaphysics.
 
@@ -47,7 +49,7 @@ Schopenhauer criticized Descartes, Spinoza, Leibniz, and other rationalists for 
 
 Therefore, it is very likely that many researchers nowadays may make the same mistake.
 
-### 1. The Principle of Sufficient Reason - "Becoming"
+#### **1. The Principle of Sufficient Reason - "Becoming"**
 
 >Satz vom zureichenden Grunde des Werdens, principium rationis sufficientis fiendi
 
@@ -55,7 +57,7 @@ It is about the natural becoming of objects. Objects here mean everything within
 
 This question is more like asking, “Why did this happen?” in the normal scientific sense. It asks about causal interactions, causal probes of mechanisms, why one thing caused A, how A caused B, how B caused C, and so forth. In my research field of neural engineering, it might be something like: let's say we find that stimulation \(U\) drives neural population dynamics \(Z\), and therefore produces a behavior \(B\).
 
-### 2. The Principle of Sufficient Reason - "Knowing"
+#### **2. The Principle of Sufficient Reason - "Knowing"**
 
 > Satz vom zureichenden Grunde des Erkennens, principium rationis sufficientis cognoscendi
 
@@ -69,7 +71,7 @@ As a quote attributed here to Schopenhauer:
 
 “Grounds for believing a proposition are not the same thing as causes of the phenomenon described by that proposition.”
 
-### 3. The Principle of Sufficient Reason - "Being"
+#### **3. The Principle of Sufficient Reason - "Being"**
 
 > Satz vom zureichenden Grunde des Seins, Principium rationis sufficientis essendi
 
@@ -77,7 +79,7 @@ All objects are defined within two orthogonal dimensions, time and space, and wi
 
 One example may be asking about the reason of being. By elucidating the relationship with other objects, without necessarily asking about causality, one might ask: **“What structural constraints make a state possible?”** For example, what kind of structure or constraint makes such a phenomenon inevitable?
 
-### 4. The Principle of Sufficient Reason - "Acting / Willing"
+#### **4. The Principle of Sufficient Reason - "Acting / Willing"**
 
 > Satz vom zureichenden Grunde des Handelns, Principium rationis sufficientis essendi
 
@@ -87,7 +89,9 @@ So this question is about motivation and intention, or in modern terms, context,
 
 So, in summary, using the fourfold root, we can ask questions using the same framework in neuroscience and AI, thanks to Schopenhauer:
 
-#### *Fourfold Root of Sufficient Reason for Scientific Inquiry*
+---
+
+*Fourfold Root of Sufficient Reason for Scientific Inquiry*
 
 1. **Causal probe** - What makes it happen? (Becoming)
 

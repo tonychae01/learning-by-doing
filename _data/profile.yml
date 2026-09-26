@@ -19,11 +19,11 @@ bio:
     I am an incoming PhD student in Electrical Engineering and Computer Sciences at
     <a href="https://eecs.berkeley.edu/">UC Berkeley</a>.
   - >
-    I research how data-driven AI models can advance our understanding of neural
-    computation and build bidirectional brain-computer interfaces (BCI) to safely
-    interact with our nervous system. My work centers on three threads:
-    <code>Closed-loop neurostimulation</code>,
-    <code>Neural population dynamics</code>, and
+    I research how data-driven AI and mechanistic approaches can advance our understanding of neural 
+    computation and enable safe control of neural dynamics for bidirectional brain-computer interfaces (BCIs). 
+    My work centers on three threads: 
+    <code>Closed-loop neurostimulation</code>, 
+    <code>Neural population dynamics</code>, and 
     <code>Neural engineering for basic science</code>.<br>
     My work is supported by the
     <a href="https://www.nsfgrfp.org/">NSF Graduate Research Fellowship Program (GRFP)</a>.

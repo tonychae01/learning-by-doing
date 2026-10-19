@@ -26,7 +26,7 @@ What about agency? What do human agency and AI agency have in common? One differ
 Importantly, humans do not use their brains only to understand the environment. Through interacting with the world, we also learn to control and reorganize our own neural activity. This is why I think BCI should not simply become another efficient interface between humans and machines. **BCI offers an opportunity not only to read the brain, but also to help the brain learn.**
 
 <p align="center">
-  <img src="images/Brain_probe.png" width="600">
+  <img src="{{ '/assets/writings/Brain_probe.png' | relative_url }}" width="600">
   <br>
   <em></em>
 </p>
@@ -54,7 +54,7 @@ It is just a start that we can deliberately manipulate the neural-to-action mapp
 I recently read [*Phase Lock*](https://phaselock.satpugnet.com/) on X (Twitter), which gain attention providing a compelling argument that BCI may be approaching an inflection point similar to where AI was a decade ago. Perhaps we are now in the GPT-2 era.
 
 <p align="center">
-  <img src="images/scale-law-eeg.png" width="600">
+  <img src="{{ '/assets/writings/scale-law-eeg.png' | relative_url }}" width="600">
   <br>
   <em>Figure from the Phase Lock blog post of scaling law</em>
 </p>
@@ -80,7 +80,7 @@ We should also ask what the user is learning, what neural changes the system enc
 
 The reason I love neurotechnology community is because I hope it to continually preserves its most beautiful characteristics; People from neuroscience, mathematics, robotics, engineering, neurology, lawmakers are working toward a shared mission; not simply a competition for performance and efficiency like current moment of AI, nor an ad-hoc afterthought of rapid deployment.
 
-> **A BCI company should be able to explain not only why its system works so well, but also why it fails for some people.**
+> *A BCI company should be able to explain not only why its system works so well, but also why it fails for some people.*
 
 ### 4. BCI illiteracy: The People We Should Pay More Attention To
 
@@ -88,7 +88,7 @@ One of the most challenging parts of clinical BCI is that *not everyone* can gai
 
 
 <p align="center">
-  <img src="images/bci-learning.png" width="600">
+  <img src="{{ '/assets/writings/bci-learning.png' | relative_url }}" width="600">
   <br>
   <em>Conceptual BCI learning curves. Highlight users with persistently low performance despite extensive training.</em>
 </p>
@@ -204,7 +204,7 @@ The brain learns through the very feedback we provide. So my neural representati
 The model may be very good at predicting a common neural response, but **why should that common response necessarily be the best neural subspace for each individual to learn to control?**
 
 <p align="center">
-  <img src="images/brain-topology.png" width="600">
+  <img src="{{ '/assets/writings/brain-topology.png' | relative_url }}" width="600">
   <br>
   <em></em>
 </p>
@@ -229,7 +229,7 @@ I believe neural foundation models could help us understand individual differenc
 
 It means allowing different people to discover and develop their own neural control strategies, rather than assuming that one shared representation or learning pathway is optimal for everyone.
 
-> **A good BCI should not make every brain learn in the same way. It should help each brain learn in the way that works best for it.**
+> *A good BCI should not make every brain learn in the same way. It should help each brain learn in the way that works best for it.*
 
 ### 8. Toward a More Holistic View of BCI
 

@@ -17,7 +17,10 @@
   badge: "Under Review"
   image: "/assets/pub/mtrenirs.png"
   selected: true
-  links: []
+  links: 
+  - { name: "Article", url: "https://arxiv.org/abs/2610.36159" }
+  - { name: "Code", url: "https://github.com/microsoft/MtReNIRS" }
+  
 
 - title: "Skin-attached bioadhesive patch enabling ultrasound deep brain stimulation and real-time electrophysiological monitoring for REM sleep enhancement"
   authors: "Kai Wing Kevin Tang, Benjamin Baird, William D. Moscoso-Barrera, Mengxia Yu, Mengmeng Yao, Jinmo Jeong, Ilya Pyatnitskiy, Anakaren Romero Lozano, Jiachen Wang, Ju-Chun Hsieh, Tony Sungjin Chae, Daniel Song, Julieta Garcia, Rithvik Mittapalli, Adam Bush, Wynn Legon, Vincent Mysliwiec, Gregory A. Fonzo, Huiliang Wang"

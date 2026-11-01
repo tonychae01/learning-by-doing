@@ -192,7 +192,7 @@ A possible experiment is to identify a model of neural population dynamics and u
 
 $\delta\dot{x}=A\delta x+B\delta u$ 
 
-$$\underbrace{\text{Identify } A,B}_{\text{Model}} \;\longrightarrow\; \underbrace{\text{Predict response to }u}_{\text{Hypothesis}} \;\longrightarrow\; \underbrace{\text{Apply stimulation}}_{\text{Intervention}} \;\longrightarrow\; \underbrace{\text{Compare predictions}}_{\text{Evidence}}$$
+$\underbrace{\text{Identify } A,B}_{\text{Model}} \;\longrightarrow\; \underbrace{\text{Predict response to }u}_{\text{Hypothesis}} \;\longrightarrow\; \underbrace{\text{Apply stimulation}}_{\text{Intervention}} \;\longrightarrow\; \underbrace{\text{Compare predictions}}_{\text{Evidence}}$
 
 However, this tests an intervention-aware dynamical hypothesis, not necessarily the **unique**  mechanism of the biological computation. 
 

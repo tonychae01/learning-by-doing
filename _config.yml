@@ -4,6 +4,7 @@ url: "https://tonychae01.github.io"
 baseurl: "/learning-by-doing"
 markdown: kramdown
 kramdown:
+  input: GFM
   math_engine: mathjax
 buttondown_username: "tonyschae"
 

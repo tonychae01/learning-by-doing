@@ -101,7 +101,8 @@ $\text{Baseline: }\hat B_{t+1}=f(B_t)$
 $\text{Full model: }\hat B_{t+1}=g(A_t,B_t)$
 
 and important thing to evaluate is the "gain" between the two model.
-$\Delta R^2 = R^2_{\mathrm{full}}-R^2_{\mathrm{baseline}}$
+
+$\Delta R^2 = R^2_{\text{full}}-R^2_{\text{baseline}}$
 
 The new feature A is only valuable when this new feature A actually improve prediction beyond what is already predictable from B. Good prediction is insufficient when baseline is already strong.
 
@@ -118,6 +119,7 @@ $\mathrm{\text{Casual effect of binary perturbation}} = \mathbb E[B\mid do(A=1)]
 Different causal structures can produce similar observational correlations but different responses to intervention. What kind of causal structure is possible?
 
 **Case 1: Common input**
+
 $$
 \begin{array}{ccc}
 & C &\\
@@ -125,12 +127,15 @@ $$
 A && B
 \end{array}
 $$
+
 If we intervene on A, B need not change because B is driven by C, assuming no other causal pathway from A to B. 
 
 **Case 2: Direct influence**
+
 $$
 A \longrightarrow B
 $$
+
 Perturbing A can change B, if the intervention is effective and the causal effect is expressed under the tested conditions.
 
 **Case 3: Indirect influence**
@@ -138,6 +143,7 @@ Perturbing A can change B, if the intervention is effective and the causal effec
 $$
 A \longrightarrow C \longrightarrow B
 $$
+
 Perturbing A may change B through C. The magnitude of the effect can depend on other inputs, hidden variables, and the current state. 
 
 **Case 4: Multiple or compensatory pathways**
@@ -149,6 +155,7 @@ A &\longrightarrow C_2 \longrightarrow B \\
 A &\longrightarrow B \ and \ A' \longrightarrow B
 \end{aligned}
 $$
+
 Different pathways may produce opposing effects or compensation. Therefore, a small or null effect (e.g., no change after perturbation experiment) does not necessarily imply that A has no causal role. Because, intuitively, it may be due to lack of A's energy to make causal effect to B, or other inhibitory circuits may reduce the causal effect of A.
 
 **Important limitation:** Causal perturbation identifies the effect of an intervention, but does not necessarily identify a unique mechanism or detailed generating principles.
@@ -185,7 +192,7 @@ A possible experiment is to identify a model of neural population dynamics and u
 
 $\delta\dot{x}=A\delta x+B\delta u$ 
 
-$\underbrace{\text{Identify } A,B}_{\text{Model}} \;\longrightarrow\; \underbrace{\text{Predict response to }u}_{\text{Hypothesis}} \;\longrightarrow\; \underbrace{\text{Apply stimulation}}_{\text{Intervention}} \;\longrightarrow\; \underbrace{\text{Compare predictions}}_{\text{Evidence}}$
+$$\underbrace{\text{Identify } A,B}_{\text{Model}} \;\longrightarrow\; \underbrace{\text{Predict response to }u}_{\text{Hypothesis}} \;\longrightarrow\; \underbrace{\text{Apply stimulation}}_{\text{Intervention}} \;\longrightarrow\; \underbrace{\text{Compare predictions}}_{\text{Evidence}}$$
 
 However, this tests an intervention-aware dynamical hypothesis, not necessarily the **unique**  mechanism of the biological computation. 
 

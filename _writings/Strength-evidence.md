@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "How to analyze the strength of the scientific evidence?"
+title: "How to Analyze the Strength of the Scientific Evidence?"
 date: 2026-10-31
 summary: 
 ---

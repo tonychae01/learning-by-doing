@@ -102,7 +102,9 @@ $\text{Full model: }\hat B_{t+1}=g(A_t,B_t)$
 
 and important thing to evaluate is the "gain" between the two model.
 
-$\Delta R^2 = R^2_{\text{full}}-R^2_{\text{baseline}}$
+$$
+\Delta R^2 = R^2_{\text{full}} - R^2_{\text{baseline}}
+$$
 
 The new feature A is only valuable when this new feature A actually improve prediction beyond what is already predictable from B. Good prediction is insufficient when baseline is already strong.
 
@@ -192,7 +194,15 @@ A possible experiment is to identify a model of neural population dynamics and u
 
 $\delta\dot{x}=A\delta x+B\delta u$ 
 
-$\underbrace{\text{Identify } A,B}_{\text{Model}} \;\longrightarrow\; \underbrace{\text{Predict response to }u}_{\text{Hypothesis}} \;\longrightarrow\; \underbrace{\text{Apply stimulation}}_{\text{Intervention}} \;\longrightarrow\; \underbrace{\text{Compare predictions}}_{\text{Evidence}}$
+$$
+\underbrace{\text{Identify } A,B}_{\text{Model}}
+\;\longrightarrow\;
+\underbrace{\text{Predict response to }u}_{\text{Hypothesis}}
+\;\longrightarrow\;
+\underbrace{\text{Apply stimulation}}_{\text{Intervention}}
+\;\longrightarrow\;
+\underbrace{\text{Compare predictions}}_{\text{Evidence}}
+$$
 
 However, this tests an intervention-aware dynamical hypothesis, not necessarily the **unique**  mechanism of the biological computation. 
 
